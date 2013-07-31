@@ -1,0 +1,55 @@
+---
+title: Intradependent modelling of carbon
+author: Sebastian Campbell
+framework: shower
+widgets: []
+mode   : selfcontained
+--- .cover #Cover
+
+# Intradependent modelling of carbon with NIR spectra
+
+![cover](soildie_small.jpg)
+
+---
+
+## Talk summary
+
+- Global soil carbon projects
+- Carbon models
+ - MCMC
+- Intradependent carbon models
+
+---
+
+## Carbon projects around the world
+<ul>
+  <li>RaCA</li>
+  <li class="next">National Soil Carbon Program</li>
+</ul>
+
+---
+
+## Existing carbon models used on spectra
+- Empirical models
+ - Multiple linear regression
+ - Boosted regression trees
+ - Partial Least Squares
+ - Principal Component Regression
+
+--- .shout #warning
+
+## But what if our models don't make sense?
+
+---
+
+## Traditional modelling
+
+Traditionally, empirical modelling has a singular goal:
+
+- To 
+
+---
+
+## Goals
+
+- To predict soil qualities primarily carbon
