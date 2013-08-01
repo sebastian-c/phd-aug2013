@@ -2,7 +2,7 @@
 title: Intradependent modelling of carbon
 author: Sebastian Campbell
 framework: shower
-widgets: []
+widgets: mathjax
 mode   : selfcontained
 --- .cover #Cover
 
