@@ -36,7 +36,7 @@ mode   : selfcontained
  - Partial Least Squares
  - Principal Component Regression
 
---- .shout #warning
+--- .shout
 
 ## But what if our models don't make sense?
 
@@ -45,11 +45,34 @@ mode   : selfcontained
 ## Traditional modelling
 
 Traditionally, empirical modelling has a singular goal:
+- To estimate, using a range of soil properties (and spectra), a single soil property
+- But what if our prediction doesn't make sense?
+- If we get a pH of 4, the soil probably isn't high in $\rm{CaCO_{3}}$
 
-- To 
+--- .shout
+
+## What are we going to do about it?
 
 ---
 
-## Goals
+## We think like scientists
 
-- To predict soil qualities primarily carbon
+- Predictions aren't valuable if they conflict with existing knowledge
+- NIR spectra offer an opportunity
+ - From one set of predictors, we can 
+
+---
+
+## What benefit is this really going to offer?
+
+- Emulation of some aspects of the scientific process
+ - 
+
+---
+
+## References
+
+---
+
+## Acknowledgements
+
