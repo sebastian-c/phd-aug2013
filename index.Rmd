@@ -1,12 +1,12 @@
 ---
-title: Intradependent modelling of carbon
+title: Intradependent modelling of carbon with NIR spectra
 author: Sebastian Campbell
 framework: shower
 widgets: mathjax
 mode   : selfcontained
 --- .cover #Cover
 
-# Intradependent modelling of carbon with NIR spectra
+# Mechanistic-Empirical modelling of soil carbon with NIR spectra
 
 ![cover](soildie_small.jpg)
 
@@ -29,6 +29,14 @@ mode   : selfcontained
 
 ---
 
+## What do we really want to predict?
+
+-  Soil Organic Carbon at a precise point in time
+ - Not carbon over time
+ - Not various carbon pools
+
+---
+
 ## Existing carbon models used on spectra
 - Empirical models
  - Multiple linear regression
@@ -47,7 +55,7 @@ mode   : selfcontained
 Traditionally, empirical modelling has a singular goal:
 - To estimate, using a range of soil properties (and spectra), a single soil property
 - But what if our prediction doesn't make sense?
-- If we get a pH of 4, the soil probably isn't high in $\rm{CaCO_{3}}$
+- If we get a pH of 4, the soil probably isn't high in $\sf{CaCO_{3}}$
 
 --- .shout
 
@@ -59,14 +67,85 @@ Traditionally, empirical modelling has a singular goal:
 
 - Predictions aren't valuable if they conflict with existing knowledge
 - NIR spectra offer an opportunity
- - From one set of predictors, we can 
+ - From one set of predictors, we can make a range of predictions and check them for sanity
 
 ---
 
 ## What benefit is this really going to offer?
 
-- Emulation of some aspects of the scientific process
- - 
+- Sensible modelling
+ - Results are checked to some degree for sanity
+- The ability to do some degree of verification for soil properties which cannot be directly measured
+
+--- .shout
+
+## Nice idea. But how?
+
+---
+
+## Model summary
+
+- Generate starting values (existing Cubist models)
+- Select property of interest (e.g. soil carbon)
+- Read in all pedotransfer function containing this property
+- Find the most common predictor
+
+***pnotes
+Maybe a picture here? Link to impress.js presentation?
+
+---
+
+## An example
+
+Quantifying clay minerals using spectra, org C and clay
+
+- Using spectra, org C and clay to predict soil minerals
+
+---
+
+## First we'll need some training data
+
+- RaCA data
+ - 3171 horizons in continental US
+ - NIR spectra (350 - 2500nm)
+ - Org C (%), clay (%), $\sf{CEC_{NH_{4}}}$
+
+--- .cover w.
+
+## Map of points
+
+![]()
+
+---
+
+## Process the data
+
+- On spectra
+ - Savitzky-Golay filter
+ - Trim spectra to ranges in which each mineral is found
+  - Smectite window: 1830 – 2130 nm
+  - Kaolinite window: 2131 – 2260 nm
+  - Illite window: 2261 – 2410 nm
+
+--- .cover 
+
+## &nbsp;
+
+<img src="images/Method diagram.png" width=1000>
+
+---
+
+## How that fits in
+
+--- .shout
+
+## So to recap...
+
+---
+
+## Recap
+
+- Carbon models are a one-at a time dealio
 
 ---
 

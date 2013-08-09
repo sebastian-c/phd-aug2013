@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-	<title>Intradependent modelling of carbon</title>
+	<title>Intradependent modelling of carbon with NIR spectra</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=1274, user-scalable=no">
-	<meta name="description" content="Intradependent modelling of carbon">
+	<meta name="description" content="Intradependent modelling of carbon with NIR spectra">
 	<meta name="author" content="Sebastian Campbell">
 	<meta name="generator" content="slidify" />
 	<!-- LOAD STYLE SHEETS -->
@@ -33,11 +33,11 @@
 </head>
 <body class="list">
   <header class="caption">
-  	<h1>Intradependent modelling of carbon</h1>
+  	<h1>Intradependent modelling of carbon with NIR spectra</h1>
 	</header>
   <section class="slide cover" id="Cover">
   <div>
-    <h2>Intradependent modelling of carbon with NIR spectra</h2>
+    <h2>Mechanistic-Empirical modelling of soil carbon with NIR spectra</h2>
     <p><img src="soildie_small.jpg" alt="cover"></p>
 
   </div>
@@ -69,6 +69,20 @@
 </section>
 <section class="slide " id="slide-4">
   <div>
+    <h2>What do we really want to predict?</h2>
+    <ul>
+<li> Soil Organic Carbon at a precise point in time
+
+<ul>
+<li>Not carbon over time</li>
+<li>Not various carbon pools</li>
+</ul></li>
+</ul>
+
+  </div>
+</section>
+<section class="slide " id="slide-5">
+  <div>
     <h2>Existing carbon models used on spectra</h2>
     <ul>
 <li>Empirical models
@@ -83,13 +97,13 @@
 
   </div>
 </section>
-<section class="slide shout" id="slide-5">
+<section class="slide shout" id="slide-6">
   <div>
     <h2>But what if our models don&#39;t make sense?</h2>
     
   </div>
 </section>
-<section class="slide " id="slide-6">
+<section class="slide " id="slide-7">
   <div>
     <h2>Traditional modelling</h2>
     <p>Traditionally, empirical modelling has a singular goal:</p>
@@ -97,30 +111,148 @@
 <ul>
 <li>To estimate, using a range of soil properties (and spectra), a single soil property</li>
 <li>But what if our prediction doesn&#39;t make sense?</li>
-<li>If we get a pH of 4, the soil probably isn&#39;t high in \(\rm{CaCO_{3}}\)</li>
+<li>If we get a pH of 4, the soil probably isn&#39;t high in \(\sf{CaCO_{3}}\)</li>
 </ul>
 
   </div>
 </section>
-<section class="slide shout" id="slide-7">
+<section class="slide shout" id="slide-8">
   <div>
-    <h2>What are you going to do about it?</h2>
-    
-  </div>
-</section>
-<section class="slide " id="slide-8">
-  <div>
-    <h2>Good question</h2>
+    <h2>What are we going to do about it?</h2>
     
   </div>
 </section>
 <section class="slide " id="slide-9">
   <div>
+    <h2>We think like scientists</h2>
+    <ul>
+<li>Predictions aren&#39;t valuable if they conflict with existing knowledge</li>
+<li>NIR spectra offer an opportunity
+
+<ul>
+<li>From one set of predictors, we can make a range of predictions and check them for sanity</li>
+</ul></li>
+</ul>
+
+  </div>
+</section>
+<section class="slide " id="slide-10">
+  <div>
+    <h2>What benefit is this really going to offer?</h2>
+    <ul>
+<li>Sensible modelling
+
+<ul>
+<li>Results are checked to some degree for sanity</li>
+</ul></li>
+<li>The ability to do some degree of verification for soil properties which cannot be directly measured</li>
+</ul>
+
+  </div>
+</section>
+<section class="slide shout" id="slide-11">
+  <div>
+    <h2>Nice idea. But how?</h2>
+    
+  </div>
+</section>
+<section class="slide " id="slide-12">
+  <div>
+    <h2>Model summary</h2>
+    <ul>
+<li>Generate starting values (existing Cubist models)</li>
+<li>Select property of interest (e.g. soil carbon)</li>
+<li>Read in all pedotransfer function containing this property</li>
+<li>Find the most common predictor</li>
+</ul>
+
+  </div>
+</section>
+<section class="slide " id="slide-13">
+  <div>
+    <h2>An example</h2>
+    <p>Quantifying clay minerals using spectra, org C and clay</p>
+
+<ul>
+<li>Using spectra, org C and clay to predict soil minerals</li>
+</ul>
+
+  </div>
+</section>
+<section class="slide " id="slide-14">
+  <div>
+    <h2>First we&#39;ll need some training data</h2>
+    <ul>
+<li>RaCA data
+
+<ul>
+<li>3171 horizons in continental US</li>
+<li>NIR spectra (350 - 2500nm)</li>
+<li>Org C (%), clay (%), \(\sf{CEC_{NH_{4}}}\)</li>
+</ul></li>
+</ul>
+
+  </div>
+</section>
+<section class="slide cover" id="slide-15">
+  <div>
+    <h2>Map of points</h2>
+    <p>[]()</p>
+
+  </div>
+</section>
+<section class="slide " id="slide-16">
+  <div>
+    <h2>Process the data</h2>
+    <ul>
+<li>On spectra
+
+<ul>
+<li>Savitzky-Golay filter</li>
+<li>Trim spectra to ranges in which each mineral is found</li>
+<li>Smectite window: 1830 – 2130 nm</li>
+<li>Kaolinite window: 2131 – 2260 nm</li>
+<li>Illite window: 2261 – 2410 nm</li>
+</ul></li>
+</ul>
+
+  </div>
+</section>
+<section class="slide cover" id="slide-17">
+  <div>
+    <h2>&nbsp;</h2>
+    <p><img src="images/Method diagram.png" width=1000></p>
+
+  </div>
+</section>
+<section class="slide " id="slide-18">
+  <div>
+    <h2>How that fits in</h2>
+    
+  </div>
+</section>
+<section class="slide shout" id="slide-19">
+  <div>
+    <h2>So to recap...</h2>
+    
+  </div>
+</section>
+<section class="slide " id="slide-20">
+  <div>
+    <h2>Recap</h2>
+    <ul>
+<li>Carbon models are a one-at a time dealio</li>
+</ul>
+
+  </div>
+</section>
+<section class="slide " id="slide-21">
+  <div>
     <h2>References</h2>
     
   </div>
 </section>
-<section class="slide " id="slide-10">
+<section class="slide " id="slide-22">
   <div>
     <h2>Acknowledgements</h2>
     
