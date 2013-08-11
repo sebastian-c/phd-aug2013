@@ -100,6 +100,7 @@ Maybe a picture here? Link to impress.js presentation?
 Quantifying clay minerals using spectra, org C and clay
 
 - Using spectra, org C and clay to predict soil minerals
+ - Kaolinite, Illite and Montmorillonite
 
 ---
 
@@ -110,30 +111,50 @@ Quantifying clay minerals using spectra, org C and clay
  - NIR spectra (350 - 2500nm)
  - Org C (%), clay (%), $\sf{CEC_{NH_{4}}}$
 
---- .cover
+--- .cover .w
 
-## Map of points
-
-![]()
+![](images/pointmap.png)
 
 ---
 
 ## Process the data
 
+- Smooth and snip
+ - Filter the spectra and isolate diagnostic range
+ - Remove convex hull
+ - Find peak in diagnostic range (maximum)
+- Compare peak to diagnostic peak
+ - Obtain relative abundance
 
-- Savitzky-Golay filter
-- Trim spectra to ranges in which each mineral is found
- - Smectite window: 1830 – 2130 nm
- - Kaolinite window: 2131 – 2260 nm
- - Illite window: 2261 – 2410 nm
-
---- .cover #Diagram
+--- .cover .w
 
 ![](images/Method diagram.png)
+
+--- .cover .h
+
+![](images/single 1-1.png)
+
+---
+
+## Validation
+
+- Cross check with Washington data
+ - Spectra
+ - Lab measurements
+ - Minerals
+
+--- .cover .h
+
+![](images/CEC-Washington.png)
+
+--- .cover .h
+
+![](images/Not_so_pretty_boxplots.png)
 
 ---
 
 ## How that fits in
+
 
 --- .shout
 

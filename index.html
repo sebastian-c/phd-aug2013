@@ -29,13 +29,6 @@
 			color:#FFF;
 			text-align:center;
 			}
-    #Diagram img {
-position: relative;
-top: -20%;
-width: 130%;
-left: -15%;
-    }
-    
 	</style> 
 </head>
 <body class="list">
@@ -181,7 +174,11 @@ left: -15%;
     <p>Quantifying clay minerals using spectra, org C and clay</p>
 
 <ul>
-<li>Using spectra, org C and clay to predict soil minerals</li>
+<li>Using spectra, org C and clay to predict soil minerals
+
+<ul>
+<li>Kaolinite, Illite and Montmorillonite</li>
+</ul></li>
 </ul>
 
   </div>
@@ -201,10 +198,10 @@ left: -15%;
 
   </div>
 </section>
-<section class="slide cover" id="slide-15">
+<section class="slide cover w" id="slide-15">
   <div>
-    <h2>Map of points</h2>
-    <p>[]()</p>
+    <h2></h2>
+    <p><img src="images/pointmap.png" alt=""></p>
 
   </div>
 </section>
@@ -212,38 +209,78 @@ left: -15%;
   <div>
     <h2>Process the data</h2>
     <ul>
-<li>Savitzky-Golay filter</li>
-<li>Trim spectra to ranges in which each mineral is found
+<li>Smooth and snip
 
 <ul>
-<li>Smectite window: 1830 – 2130 nm</li>
-<li>Kaolinite window: 2131 – 2260 nm</li>
-<li>Illite window: 2261 – 2410 nm</li>
+<li>Filter the spectra and isolate diagnostic range</li>
+<li>Remove convex hull</li>
+<li>Find peak in diagnostic range (maximum)</li>
+</ul></li>
+<li>Compare peak to diagnostic peak
+
+<ul>
+<li>Obtain relative abundance</li>
 </ul></li>
 </ul>
 
   </div>
 </section>
-<section class="slide cover" id="Diagram">
+<section class="slide cover w" id="slide-17">
   <div>
     <h2></h2>
     <p><img src="images/Method%20diagram.png" alt=""></p>
 
   </div>
 </section>
-<section class="slide " id="slide-18">
+<section class="slide cover h" id="slide-18">
+  <div>
+    <h2></h2>
+    <p><img src="images/single%201-1.png" alt=""></p>
+
+  </div>
+</section>
+<section class="slide " id="slide-19">
+  <div>
+    <h2>Validation</h2>
+    <ul>
+<li>Cross check with Washington data
+
+<ul>
+<li>Spectra</li>
+<li>Lab measurements</li>
+<li>Minerals</li>
+</ul></li>
+</ul>
+
+  </div>
+</section>
+<section class="slide cover h" id="slide-20">
+  <div>
+    <h2></h2>
+    <p><img src="images/CEC-Washington.png" alt=""></p>
+
+  </div>
+</section>
+<section class="slide cover h" id="slide-21">
+  <div>
+    <h2></h2>
+    <p><img src="images/Not_so_pretty_boxplots.png" alt=""></p>
+
+  </div>
+</section>
+<section class="slide " id="slide-22">
   <div>
     <h2>How that fits in</h2>
     
   </div>
 </section>
-<section class="slide shout" id="slide-19">
+<section class="slide shout" id="slide-23">
   <div>
     <h2>So to recap...</h2>
     
   </div>
 </section>
-<section class="slide " id="slide-20">
+<section class="slide " id="slide-24">
   <div>
     <h2>Recap</h2>
     <ul>
@@ -252,13 +289,13 @@ left: -15%;
 
   </div>
 </section>
-<section class="slide " id="slide-21">
+<section class="slide " id="slide-25">
   <div>
     <h2>References</h2>
     
   </div>
 </section>
-<section class="slide " id="slide-22">
+<section class="slide " id="slide-26">
   <div>
     <h2>Acknowledgements</h2>
     
