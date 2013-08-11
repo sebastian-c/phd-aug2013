@@ -87,8 +87,9 @@ Traditionally, empirical modelling has a singular goal:
 
 - Generate starting values (existing Cubist models)
 - Select property of interest (e.g. soil carbon)
-- Read in all pedotransfer function containing this property
+- Read in all pedotransfer functions containing this property
 - Find the most common predictor
+- **NEED TO FINISH**
 
 ***pnotes
 Maybe a picture here? Link to impress.js presentation?
@@ -155,6 +156,8 @@ Quantifying clay minerals using spectra, org C and clay
 
 ## How that fits in
 
+- Creating models which better use existing knowledge
+- This model allowed us to make a prediction of a difficult to measure property.
 
 --- .shout
 
@@ -164,13 +167,23 @@ Quantifying clay minerals using spectra, org C and clay
 
 ## Recap
 
-- Carbon models are a one-at a time dealio
+- Carbon models at present predict one thing at a time
+- Using multiple responses in conjunction with each other yields two major benefits
+ - Prediction of sane responses
+ - Prediction of responses for which direct prediction is difficult
 
 ---
 
 ## References
 
+- Like you're going to read them anyway
+
 ---
 
 ## Acknowledgements
 
+- Alex
+- Budi
+- RaCA/Florida
+- Washington
+- Etc.
