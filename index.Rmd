@@ -110,7 +110,7 @@ Quantifying clay minerals using spectra, org C and clay
  - NIR spectra (350 - 2500nm)
  - Org C (%), clay (%), $\sf{CEC_{NH_{4}}}$
 
---- .cover w.
+--- .cover
 
 ## Map of points
 
@@ -120,18 +120,16 @@ Quantifying clay minerals using spectra, org C and clay
 
 ## Process the data
 
-- On spectra
- - Savitzky-Golay filter
- - Trim spectra to ranges in which each mineral is found
-  - Smectite window: 1830 – 2130 nm
-  - Kaolinite window: 2131 – 2260 nm
-  - Illite window: 2261 – 2410 nm
 
---- .cover 
+- Savitzky-Golay filter
+- Trim spectra to ranges in which each mineral is found
+ - Smectite window: 1830 – 2130 nm
+ - Kaolinite window: 2131 – 2260 nm
+ - Illite window: 2261 – 2410 nm
 
-## &nbsp;
+--- .cover #Diagram
 
-<img src="images/Method diagram.png" width=1000>
+![](images/Method diagram.png)
 
 ---
 
