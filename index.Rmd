@@ -14,35 +14,31 @@ mode   : selfcontained
 
 ## Talk summary
 
-- Global soil carbon projects
-- Carbon models
- - MCMC
-- Intradependent carbon models
+- Everybody Loves Carbon
+ - But only alone
+- Keeping carbon company
+- An example
 
 ---
 
-## Carbon projects around the world
-<ul>
-  <li>RaCA</li>
-  <li class="next">National Soil Carbon Program</li>
-</ul>
+## What's the problem?
+
+- Everyone's interested in carbon
+ - GlobalSoilMap.net
+ - National Soil CArbon Program
+ - RaCA
+- It's irksome to measure
+ - Lab equipment
+ - Time and expertise
 
 ---
 
 ## What do we really want to predict?
 
--  Soil Organic Carbon at a precise point in time
+-  Soil Organic Carbon
  - Not carbon over time
  - Not various carbon pools
-
----
-
-## Existing carbon models used on spectra
-- Empirical models
- - Multiple linear regression
- - Boosted regression trees
- - Partial Least Squares
- - Principal Component Regression
+- These other aspects can be added, but they are not the focus
 
 --- .shout
 
@@ -56,6 +52,15 @@ Traditionally, empirical modelling has a singular goal:
 - To estimate, using a range of soil properties (and spectra), a single soil property
 - But what if our prediction doesn't make sense?
 - If we get a pH of 4, the soil probably isn't high in $\sf{CaCO_{3}}$
+
+---
+
+## Existing carbon models used on spectra
+- Empirical models
+ - Multiple linear regression
+ - Boosted regression trees
+ - Partial Least Squares
+ - Principal Component Regression
 
 --- .shout
 
@@ -89,7 +94,7 @@ Traditionally, empirical modelling has a singular goal:
 - Select property of interest (e.g. soil carbon)
 - Read in all pedotransfer functions containing this property
 - Find the most common predictor
-- **NEED TO FINISH**
+- 
 
 ***pnotes
 Maybe a picture here? Link to impress.js presentation?
