@@ -11,3 +11,39 @@ mode   : selfcontained
 ![cover](soildie_small.jpg)
 
 ---
+
+## Talk summary
+
+- Background
+- Model components
+ - Empirical models
+ - Mechanistic models
+ - NIR spectra
+- Project aims
+
+---
+
+## Soil carbon
+
+- Climate change
+- Carbon credits
+- Soil fertility
+
+---
+
+## Topical
+
+- Several projects around the world
+ - GlobalSoilMap.net
+ - National Soil Carbon Program
+ - RaCA
+
+--- .shout
+
+## What's already out there?
+
+---
+
+## Empirical models
+
+- 
