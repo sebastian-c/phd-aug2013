@@ -1,12 +1,12 @@
 ---
-title: Intradependent modelling of carbon with NIR spectra
+title: Empirical-Mechanistic modelling of soil carbon with NIR spectra
 author: Sebastian Campbell
 framework: shower
 widgets: mathjax
 mode   : selfcontained
 --- .cover #Cover
 
-# Mechanistic-Empirical modelling of soil carbon with NIR spectra
+# Empirical-Mechanistic modelling of soil carbon with NIR spectra
 
 ![cover](soildie_small.jpg)
 
@@ -46,4 +46,79 @@ mode   : selfcontained
 
 ## Empirical models
 
-- 
+- All pedotransfer functions involving carbon
+- Carbon spatial models
+ - SSURGO
+
+---
+
+## Mechanistic models
+
+- Often work with carbon pools
+ - Roth C
+
+---
+
+## NIR spectra
+
+- Light in 350-2500nm range
+- Quick to measure
+
+---
+
+## How NIR is used
+
+- Primarily in empirical models
+ - Multiple linear regression
+ - Boosted regression trees
+ - Partial Least Squares
+ - Principal Component Regression
+
+---
+
+## Problems
+
+- All narrow in their focus
+- No internal validation
+ - If a prediction is off in obvious ways, it remains so
+
+--- .shout
+
+## The solution?
+
+---
+
+## Science!
+
+- Compare what we predict against what we know
+ - If we get a low pH, we probably don't also have high calcium carbonate
+- Hence get models that mimic the scientific process
+- Should combine both empirical and mechanistic approaches
+
+--- .shout
+
+## So what are you planning?
+
+---
+
+## 3 step process
+
+- Use Cubist and MCMC to generate empirical starting values
+ - From NIR spectra from US projects
+- Use mechanistic models on empirical results
+- Predict carbon in Australia for the next 30 years
+
+--- 
+
+## References
+
+- Who cares, you're not reading them
+
+---
+
+## Acknowledgements
+
+- Alex
+- Budi
+- RaCA and Florida
+- Friends and Friends
