@@ -110,6 +110,27 @@ mode   : selfcontained
 
 --- 
 
+## Initialisation
+
+- Cubist models
+ - Trained on data from US RaCA data
+ - Use reflectances at each wavelength as predictors
+
+
+---
+
+## Mechanistic layer
+
+- **INSERT SOMETHING HERE**
+
+---
+
+## Carbon predictions
+
+- **INSERT SOMETHING HERE**
+
+---
+
 ## References
 
 - Who cares, you're not reading them
