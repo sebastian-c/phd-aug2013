@@ -54,15 +54,17 @@ mode   : selfcontained
 
 ## Mechanistic models
 
-- Often work with carbon pools
+- Work with carbon pools
  - Roth C
+ - Century
 
 ---
 
 ## NIR spectra
 
 - Light in 350-2500nm range
-- Quick to measure
+- Quick and cheap to measure
+ - Relative to lab analysis
 
 ---
 
@@ -87,6 +89,18 @@ mode   : selfcontained
 ## The solution?
 
 ---
+
+## Project aims
+
+- Generate empirical model to predict SOC from carbon
+ - Use this model for cheap NIR: Quick easy sampling
+ - 
+
+***pnotes
+Error propagation
+
+---
+
 
 ## References
 
