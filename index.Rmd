@@ -88,49 +88,6 @@ mode   : selfcontained
 
 ---
 
-## Science!
-
-- Compare what we predict against what we know
- - If we get a low pH, we probably don't also have high calcium carbonate
-- Hence get models that mimic the scientific process
-- Should combine both empirical and mechanistic approaches
-
---- .shout
-
-## So what are you planning?
-
----
-
-## 3 step process
-
-- Use Cubist and MCMC to generate empirical starting values
- - From NIR spectra from US projects
-- Use mechanistic models on empirical results
-- Predict carbon in Australia for the next 30 years
-
---- 
-
-## Initialisation
-
-- Cubist models
- - Trained on data from US RaCA data
- - Use reflectances at each wavelength as predictors
-
-
----
-
-## Mechanistic layer
-
-- **INSERT SOMETHING HERE**
-
----
-
-## Carbon predictions
-
-- **INSERT SOMETHING HERE**
-
----
-
 ## References
 
 - Who cares, you're not reading them
