@@ -170,10 +170,12 @@ Two stages
 
 ## Cheat Sheet
 
-- NIR is a cheap way to measure soil carbon
-- This fact allows multiple point measurements to be taken
-- Multiple point measurements allows more accurate extrapolation
-- Once regional models have been produced: predict stocks for next 30 years
+<ul>
+  <li>NIR is a cheap way to measure soil carbon</li>
+  <li class="next">This fact allows multiple point measurements to be taken</li>
+  <li class="next">Multiple point measurements allows more accurate extrapolation</li>
+  <li class="next">Once regional models have been produced: predict stocks for next 30 years</li>
+</ul>
 
 ---
 
