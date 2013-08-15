@@ -75,6 +75,8 @@ mode   : selfcontained
  - Boosted regression trees
  - Partial Least Squares
  - Principal Component Regression
+- Used directly for prediction of a single soil property
+ - e.g. carbon
 
 ---
 
@@ -92,19 +94,86 @@ mode   : selfcontained
 
 ## Project aims
 
-- Generate empirical model to predict SOC from carbon
+1. Generate empirical model to predict SOC from NIR spectra
  - Use this model for cheap NIR: Quick easy sampling
- - 
+2. Combine spectral model with covariates to predict carbon at regional scale
+ - Use MCMC
+3. Use regional estimates as starting values for SOC mechanistic models
+ - Predict soil carbon for next 30 years
 
 ***pnotes
 Error propagation
 
+--- .shout
+
+## 1. Generating the empirical model
+
 ---
 
+## Empirical model
 
-## References
+Two stages
+- Generate model with error checking
+- Generate iterative model
+ - Time permitting
 
-- Who cares, you're not reading them
+---
+
+## Error checking
+
+- Use Cubist to generate starting values
+- Generate models for several response variables
+ - Compare responses for gross inconsistencies such as low pH and high calcium carbonate
+ - Flag points
+
+---
+
+## Iterative model
+
+- More ambitious
+- Take flagged points and adjust until consistent
+ - Make network of prediction paths
+ - Weight methods by accuracy
+ - Take path with lowest cost
+
+--- .shout
+
+## 2. Combining the spectral models
+
+---
+
+## Predicting at the regional scale 
+
+- NIR models allow more points to be measured
+ - NIR is cheap
+ - Measuring soil carbon is not
+- Use covariates from SSURGO
+ - Use MCMC to make predictions
+
+--- .shout
+
+## 3. Temporal models
+
+---
+
+## Predicting at the regional scale *over time*
+
+- Values for carbon now exist over entire regional scale
+ - Use carbon models such as Roth C and Century
+ - Predict carbon over regional scale for ~30 years
+
+--- .shout
+
+## In summary
+
+---
+
+## Cheat Sheet
+
+- NIR is a cheap way to measure soil carbon
+- This fact allows multiple point measurements to be taken
+- Multiple point measurements allows more accurate extrapolation
+- Once regional models have been produced: predict stocks for next 30 years
 
 ---
 

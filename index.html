@@ -109,10 +109,11 @@
   <div>
     <h2>Mechanistic models</h2>
     <ul>
-<li>Often work with carbon pools
+<li>Work with carbon pools
 
 <ul>
 <li>Roth C</li>
+<li>Century</li>
 </ul></li>
 </ul>
 
@@ -144,6 +145,11 @@
 <li>Partial Least Squares</li>
 <li>Principal Component Regression</li>
 </ul></li>
+<li>Used directly for prediction of a single soil property
+
+<ul>
+<li>e.g. carbon</li>
+</ul></li>
 </ul>
 
   </div>
@@ -171,24 +177,143 @@
 <section class="slide " id="slide-12">
   <div>
     <h2>Project aims</h2>
-    <ul>
-<li>Generate empirical model to predict SOC from carbon
+    <ol>
+<li>Generate empirical model to predict SOC from NIR spectra
 
-<h2>- Use this model for cheap NIR: Quick easy sampling</h2></li>
-</ul>
+<ul>
+<li>Use this model for cheap NIR: Quick easy sampling</li>
+</ul></li>
+<li>Combine spectral model with covariates to predict carbon at regional scale
+
+<ul>
+<li>Use MCMC</li>
+</ul></li>
+<li>Use regional estimates as starting values for SOC mechanistic models
+
+<ul>
+<li>Predict soil carbon for next 30 years</li>
+</ul></li>
+</ol>
 
   </div>
 </section>
-<section class="slide " id="slide-13">
+<section class="slide shout" id="slide-13">
   <div>
-    <h2>References</h2>
-    <ul>
-<li>Who cares, you&#39;re not reading them</li>
-</ul>
-
+    <h2>1. Generating the empirical model</h2>
+    
   </div>
 </section>
 <section class="slide " id="slide-14">
+  <div>
+    <h2>Empirical model</h2>
+    <p>Two stages</p>
+
+<ul>
+<li>Generate model with error checking</li>
+<li>Generate iterative model
+
+<ul>
+<li>Time permitting</li>
+</ul></li>
+</ul>
+
+  </div>
+</section>
+<section class="slide " id="slide-15">
+  <div>
+    <h2>Error checking</h2>
+    <ul>
+<li>Use Cubist to generate starting values</li>
+<li>Generate models for several response variables
+
+<ul>
+<li>Compare responses for gross inconsistencies such as low pH and high calcium carbonate</li>
+<li>Flag points</li>
+</ul></li>
+</ul>
+
+  </div>
+</section>
+<section class="slide " id="slide-16">
+  <div>
+    <h2>Iterative model</h2>
+    <ul>
+<li>More ambitious</li>
+<li>Take flagged points and adjust until consistent
+
+<ul>
+<li>Make network of prediction paths</li>
+<li>Weight methods by accuracy</li>
+<li>Take path with lowest cost</li>
+</ul></li>
+</ul>
+
+  </div>
+</section>
+<section class="slide shout" id="slide-17">
+  <div>
+    <h2>2. Combining the spectral models</h2>
+    
+  </div>
+</section>
+<section class="slide " id="slide-18">
+  <div>
+    <h2>Predicting at the regional scale</h2>
+    <ul>
+<li>NIR models allow more points to be measured
+
+<ul>
+<li>NIR is cheap</li>
+<li>Measuring soil carbon is not</li>
+</ul></li>
+<li>Use covariates from SSURGO
+
+<ul>
+<li>Use MCMC to make predictions</li>
+</ul></li>
+</ul>
+
+  </div>
+</section>
+<section class="slide shout" id="slide-19">
+  <div>
+    <h2>3. Temporal models</h2>
+    
+  </div>
+</section>
+<section class="slide " id="slide-20">
+  <div>
+    <h2>Predicting at the regional scale <em>over time</em></h2>
+    <ul>
+<li>Values for carbon now exist over entire regional scale
+
+<ul>
+<li>Use carbon models such as Roth C and Century</li>
+<li>Predict carbon over regional scale for ~30 years</li>
+</ul></li>
+</ul>
+
+  </div>
+</section>
+<section class="slide shout" id="slide-21">
+  <div>
+    <h2>In summary</h2>
+    
+  </div>
+</section>
+<section class="slide " id="slide-22">
+  <div>
+    <h2>Cheat Sheet</h2>
+    <ul>
+<li>NIR is a cheap way to measure soil carbon</li>
+<li>This fact allows multiple point measurements to be taken</li>
+<li>Multiple point measurements allows more accurate extrapolation</li>
+<li>Once regional models have been produced: predict stocks for next 30 years</li>
+</ul>
+
+  </div>
+</section>
+<section class="slide " id="slide-23">
   <div>
     <h2>Acknowledgements</h2>
     <ul>
