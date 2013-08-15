@@ -49,6 +49,7 @@ mode   : selfcontained
 - All pedotransfer functions involving carbon
 - Carbon spatial models
  - SSURGO
+ - Kriging models
 
 ---
 
@@ -161,6 +162,32 @@ Two stages
 - Values for carbon now exist over entire regional scale
  - Use carbon models such as Roth C and Century
  - Predict carbon over regional scale for ~30 years
+
+--- .shout
+
+## What have you done so far?
+
+---
+
+## An example
+
+Quantifying clay minerals using spectra, org C and clay
+
+- Using spectra, org C and clay to predict soil minerals
+ - Kaolinite, Illite and Montmorillonite
+- Validate prediction using CEC
+
+--- .cover .w
+
+![](images/Method diagram.png)
+
+--- .cover .h
+
+![](images/single 1-1.png)
+
+--- .cover .h
+
+![](images/CEC-Washington.png)
 
 --- .shout
 
