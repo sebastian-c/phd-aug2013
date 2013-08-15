@@ -225,5 +225,4 @@ bibliography()
 
 - Alex
 - Budi
-- RaCA and Florida
-- Friends and Friends
+- RaCA project members in NRCS and Florida
