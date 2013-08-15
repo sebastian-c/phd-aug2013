@@ -8,7 +8,7 @@ mode   : selfcontained
 
 # Empirical-Mechanistic modelling of soil carbon with NIR spectra
 
-![cover](soildie_small.jpg)
+![cover](images/soildie_small.jpg)
 
 ---
 
