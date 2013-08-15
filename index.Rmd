@@ -116,7 +116,7 @@ Error propagation
 Two stages
 - Generate model with error checking
 - Generate iterative model
- - Time permitting
+ - More challenging
 
 ---
 
@@ -203,6 +203,21 @@ Quantifying clay minerals using spectra, org C and clay
   <li class="next">Multiple point measurements allows more accurate extrapolation</li>
   <li class="next">Once regional models have been produced: predict stocks for next 30 years</li>
 </ul>
+
+--- #References
+
+## References (for those playing at home)
+
+
+```{r echobib, include=FALSE, cache=TRUE}
+library(knitcitations)
+cleanbib()
+bib <- read.bibtex("phd-aug2013.bib")
+citep(bib)
+```
+```{r bibliography, results='asis', echo=FALSE, cache=FALSE}
+bibliography()
+```
 
 ---
 
