@@ -2,7 +2,7 @@
 title: Empirical-Mechanistic modelling of soil carbon with NIR spectra
 author: Sebastian Campbell
 framework: shower
-widgets: mathjax
+widgets: []
 mode   : selfcontained
 --- .cover #Cover
 
