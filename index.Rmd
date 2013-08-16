@@ -111,6 +111,10 @@ mode   : selfcontained
   </li>
 </ol>
 
+--- .cover .h
+
+![](images/raca_sites.png)
+
 --- .shout
 
 ## 1. Generating the empirical model
@@ -142,6 +146,13 @@ Two stages
  - Make network of prediction paths
  - Weight methods by accuracy
  - Take path with lowest cost
+
+---
+
+## Iterative model advantages
+
+- Model which works more like scientific process
+- Extrapolation has check steps
 
 --- .shout
 
