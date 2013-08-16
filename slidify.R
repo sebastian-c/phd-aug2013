@@ -4,6 +4,7 @@
 # install_github("knitcitations", "cboettig")
 
 library(slidify)
+library(knitcitations)
 slidify("index.Rmd")
 
 file.show("index.html")

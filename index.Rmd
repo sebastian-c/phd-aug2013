@@ -66,6 +66,7 @@ mode   : selfcontained
 - Light in 350-2500nm range
 - Quick and cheap to measure
  - Relative to lab analysis
+- Possibility of field measurement
 
 ---
 
@@ -95,15 +96,20 @@ mode   : selfcontained
 
 ## Project aims
 
-1. Generate empirical model to predict SOC from NIR spectra
- - Use this model for cheap NIR: Quick easy sampling
-2. Combine spectral model with covariates to predict carbon at regional scale
- - Use MCMC
-3. Use regional estimates as starting values for SOC mechanistic models
- - Predict soil carbon for next 30 years
-
-***pnotes
-Error propagation
+<ol>
+  <li>Generate empirical model to predict SOC from NIR spectra
+    <ul>
+      <li>Use this model for cheap NIR: Quick easy sampling</li>
+      <li><b>First with error checking, then iteration</b></li>
+    </ul>
+  </li>
+  <li class="next">Combine spectral model with covariates to predict carbon at regional scale</li>
+  <li class="next">Use regional estimates as starting values for SOC mechanistic models
+    <ul>
+      <li>Predict soil carbon for next 30 years</li>
+    </ul>
+  </li>
+</ol>
 
 --- .shout
 
@@ -116,7 +122,7 @@ Error propagation
 Two stages
 - Generate model with error checking
 - Generate iterative model
- - More challenging
+ - More challenging, but the ultimate goal
 
 ---
 
@@ -187,6 +193,10 @@ Quantifying clay minerals using spectra, org C and clay
 
 --- .cover .h
 
+![](images/Not_so_pretty_boxplots.png)
+
+--- .cover .h
+
 ![](images/CEC-Washington.png)
 
 --- .shout
@@ -209,8 +219,7 @@ Quantifying clay minerals using spectra, org C and clay
 ## References (for those playing at home)
 
 
-```{r echobib, include=FALSE, cache=TRUE}
-library(knitcitations)
+```{r echobib, echo=FALSE, results='hide', cache=TRUE, message=FALSE}
 cleanbib()
 bib <- read.bibtex("phd-aug2013.bib")
 citep(bib)
